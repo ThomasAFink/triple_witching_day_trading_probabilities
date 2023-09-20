@@ -13,6 +13,13 @@ Triple Witching refers to the quarterly event in financial markets where stock i
 
 ![image](https://github.com/ThomasAFink/triple_witching_trading_probabilities/blob/main/output/%5EGSPC_combined_data_since_1990.jpg?raw=true)
 
+The market tends to have a negative average return in the weeks following the Triple Witching Days, with the third week after TWD seeing the most significant drop of about −0.92%
+
+The volatility (standard deviation) increases with each subsequent week after the TWD which is expected because price changes more over time.
+The probability of the market ending positively is lowest in the first week after TWD (only 29.81% and highest in the fourth week (58.33%
+
+Conversely, the probability of the market ending negatively is highest in the first week after TWD (70.19%) and lowest in the fourth week (41.67%).
+
 ```
 One Week After TWD:
 Average Return: −0.4154%
@@ -64,14 +71,9 @@ Average Volume on Non-TWDs: 2,430,337,434.21 shares
 Difference in Volume: 1,060,468,312.06 shares
 ```
 
-### Observations:
+### Further Notes
 
-The market tends to have a negative average return in the weeks following the Triple Witching Days, with the third week after TWD seeing the most significant drop of about −0.92%
-
-The volatility (standard deviation) increases with each subsequent week after the TWD which is expected because price changes more over time.
-The probability of the market ending positively is lowest in the first week after TWD (only 29.81% and highest in the fourth week (58.33%
-
-Conversely, the probability of the market ending negatively is highest in the first week after TWD (70.19%) and lowest in the fourth week (41.67%).
+Liquidity: The surge in volume on TWD can lead to liquidity effects. Higher liquidity can reduce the bid-ask spread and make it easier for large institutional investors to take or close positions without significantly impacting the price. The immediate aftermath (i.e., the following week) can provide insights into how liquidity is returning to its normal state.
 
 This analysis provides insights into the market behavior following the Triple Witching Days. It's essential to keep in mind that past performance does not guarantee future results, but understanding these patterns can be helpful for investors and traders.
 
