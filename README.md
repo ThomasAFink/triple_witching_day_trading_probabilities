@@ -69,7 +69,7 @@ Key Observation: The volume on TWDs tends to be higher, with the peak of its dis
 
 
 
-Now, even if there's a spike in volume (many transactions), it doesn't necessarily mean that the price will have a wider range. Here's why:
+Now, even if there's a spike in volume (many transactions), it doesn't necessarily mean that the price will have a wider range or change. Here's why:
 
 Consensus in Direction: If most of the trading volume is biased in one direction (either buying or selling), the price will move primarily in that direction without much volatility. This means high volume but low price range.
 
@@ -79,13 +79,12 @@ Nature of TWD: The transactions on TWD might be more of a function of rolling ov
 
 Here's the comparison of percentage price ranges (difference between High and Low prices relative to the Low price) for Triple Witching Days (TWD) versus non-TWDs:
 
-<img width="754" alt="Screenshot 2023-09-20 at 11 18 24" src="https://github.com/ThomasAFink/triple_witching_trading_probabilities/assets/53316058/063d2406-c214-443b-9e6c-e5e687d56c01">
+<img width="46%" alt="Screenshot 2023-09-20 at 11 18 24" src="https://github.com/ThomasAFink/triple_witching_trading_probabilities/assets/53316058/063d2406-c214-443b-9e6c-e5e687d56c01">
+
+<img width="46%" alt="Screenshot 2023-09-20 at 11 18 24" src="https://github.com/ThomasAFink/triple_witching_trading_probabilities/assets/53316058/063d2406-c214-443b-9e6c-e5e687d56c01">
 
 
 ![image](https://github.com/ThomasAFink/triple_witching_trading_probabilities/blob/main/output/%5EGSPC_combined_data_since_1990_volume_dist_norm_compare_price.jpg?raw=true)
-
-Here's the comparison of the percentage price changes (difference between Close and Open prices relative to the Open price) for Triple Witching Days (TWD) versus non-TWDs:
-
 
 
 ```
