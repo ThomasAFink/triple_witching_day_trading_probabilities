@@ -11,6 +11,8 @@ https://www.investopedia.com/terms/t/triplewitchinghour.asp
 
 Here's the daily stock chart for the S&P 500 over the last three years. The volume is represented by the gray bars, and the Triple Witching Days (TWDs) are highlighted with yellow shading. This visualization should give you a clear view of the price movement and volume, especially around the TWDs.
 
+**stockchart.py**
+
 ![image](https://github.com/ThomasAFink/triple_witching_trading_probabilities/blob/main/output/%5EGSPC_combined_data_since_1990_stockchart.jpg?raw=true)
 
 
