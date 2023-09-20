@@ -18,6 +18,8 @@ The probability of the market ending positively is lowest in the first week afte
 
 Conversely, the probability of the market ending negatively is highest in the first week after TWD (70.19%) and lowest in the fourth week (41.67%).
 
+Really only the first week following TWD is relevant.
+
 ![image](https://github.com/ThomasAFink/triple_witching_trading_probabilities/blob/main/output/%5EGSPC_combined_data_since_1990.jpg?raw=true)
 
 ```
