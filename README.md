@@ -6,6 +6,33 @@ This Jupyter Notebook code provides a comprehensive analysis of the S&P 500 Inde
 
 Triple Witching refers to the quarterly event in financial markets where stock index futures, stock index options, and stock options all expire on the same day. This event occurs on the third Friday of March, June, September, and December, and is associated with increased trading volume and volatility. The significance of studying the returns after TWD is to understand if any predictable price patterns emerge as a result of this event.
 
+Here's the daily stock chart for the S&P 500 over the last three years. The volume is represented by the gray bars, and the Triple Witching Days (TWDs) are highlighted with yellow shading. This visualization should give you a clear view of the price movement and volume, especially around the TWDs.
+
+![image](https://github.com/ThomasAFink/triple_witching_trading_probabilities/blob/main/output/%5EGSPC_combined_data_since_1990_stockchart.jpg?raw=true)
+
+
+#### Identify the TWDs
+```
+tw_days = gspc_data[gspc_data['Date'].apply(lambda x: x.weekday() == 4 and 15 <= x.day <= 21 and x.month in [3, 6, 9, 12])]
+```
+
+
+1. **Weekday Condition**: Where ```W(d)``` is a function that returns the weekday of date ```d```. The value 4 corresponds to Friday (considering Monday as 0, Tuesday as 1, and so on).
+```W(d)=4```
+
+
+2. **Day of the Month Condition**: Where ```D(d)``` is a function that returns the day of the month for date ```d```.
+```15≤D(d)≤21```
+
+
+3. **Month Condition**: Where ```M(d)``` is a function that returns the month of date ```d```. 
+```M(d)∈{3,6,9,12}```
+
+
+Combining the above conditions, the complete formula to identify a TWD is:
+```W(d)=4 AND 15≤D(d)≤21 AND M(d)∈{3,6,9,12}```
+
+In simpler terms, this formula checks if the date ```d``` is a Friday that falls between the 15th and 21st day of the months March, June, September, or December.
 
 ### Results
 
