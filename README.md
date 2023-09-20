@@ -67,6 +67,21 @@ Key Observation: The volume on TWDs tends to be higher, with the peak of its dis
 
 ![image](https://github.com/ThomasAFink/triple_witching_trading_probabilities/blob/main/output/%5EGSPC_combined_data_since_1990_volume_dist_norm_compare.jpg?raw=true)
 
+
+
+Now, even if there's a spike in volume (many transactions), it doesn't necessarily mean that the price will have a wider range. Here's why:
+
+Consensus in Direction: If most of the trading volume is biased in one direction (either buying or selling), the price will move primarily in that direction without much volatility. This means high volume but low price range.
+
+Liquidity and Market Depth: In highly liquid markets (like the S&P 500), there's always a counterparty available. If there's an increase in buying volume, there might be enough selling interest to absorb it, preventing prices from skyrocketing. Similarly, increased selling might be matched by buying interest. This balance ensures that prices don't fluctuate wildly, even if volume is high.
+
+Nature of TWD: The transactions on TWD might be more of a function of rolling over positions or offsetting positions rather than initiating new speculative trades. Such activities might increase the volume without causing significant price swings.
+
+Here's the comparison of percentage price ranges (difference between High and Low prices relative to the Low price) for Triple Witching Days (TWD) versus non-TWDs:
+
+
+
+
 ```
 Average Volume on TWDs: 3,490,805,746.27 shares
 Average Volume on Non-TWDs: 2,430,337,434.21 shares
