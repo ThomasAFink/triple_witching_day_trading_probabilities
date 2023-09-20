@@ -18,7 +18,7 @@ Here's the daily stock chart for the S&P 500 over the last three years. The volu
 ![image](https://github.com/ThomasAFink/triple_witching_trading_probabilities/blob/main/output/%5EGSPC_combined_data_since_1990_stockchart.jpg?raw=true)
 
 ```
-Next TWD is on: 2023-12-15 00:00:00
+Next TWD is on: 2023-12-15 16:00:00 EST
 ```
 
 #### Identify the TWDs
