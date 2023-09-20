@@ -116,10 +116,9 @@ Now, even if there's a spike in volume, it doesn't necessarily mean that the pri
 
 Here's the comparison of percentage price ranges and changes (difference between High and Low prices relative to the Low price) for Triple Witching Days (TWD) versus non-TWDs:
 
-<img width="46.5%" alt="Screenshot 2023-09-20 at 11 18 24" src="https://github.com/ThomasAFink/triple_witching_trading_probabilities/assets/53316058/063d2406-c214-443b-9e6c-e5e687d56c01">
+<img width="48%" alt="Screenshot 2023-09-20 at 11 18 24" src="https://github.com/ThomasAFink/triple_witching_day_trading_probabilities/assets/53316058/19e92c45-8481-4495-9afb-0bdde4f8d10e">
 
-<img width="46.5%" alt="Screenshot 2023-09-20 at 11 42 39" src="https://github.com/ThomasAFink/triple_witching_trading_probabilities/assets/53316058/2e5ca37d-fffc-44b2-9a72-cb528f36fe37">
-
+<img width="48%" alt="Screenshot 2023-09-20 at 11 42 39" src="https://github.com/ThomasAFink/triple_witching_day_trading_probabilities/assets/53316058/0cf81c0e-7594-4aab-bef1-4f5da2079e5a">
 
 ![image](https://github.com/ThomasAFink/triple_witching_trading_probabilities/blob/main/output/%5EGSPC_combined_data_since_1990_volume_dist_norm_compare_price.jpg?raw=true)
 
