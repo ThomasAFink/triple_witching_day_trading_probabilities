@@ -11,14 +11,14 @@ Triple Witching refers to the quarterly event in financial markets where stock i
 
 **main.py**
 
-![image](https://github.com/ThomasAFink/triple_witching_trading_probabilities/blob/main/output/%5EGSPC_combined_data_since_1990.jpg?raw=true)
-
 The market tends to have a negative average return in the weeks following the Triple Witching Days, with the third week after TWD seeing the most significant drop of about −0.92%
 
 The volatility (standard deviation) increases with each subsequent week after the TWD which is expected because price changes more over time.
 The probability of the market ending positively is lowest in the first week after TWD (only 29.81% and highest in the fourth week (58.33%
 
 Conversely, the probability of the market ending negatively is highest in the first week after TWD (70.19%) and lowest in the fourth week (41.67%).
+
+![image](https://github.com/ThomasAFink/triple_witching_trading_probabilities/blob/main/output/%5EGSPC_combined_data_since_1990.jpg?raw=true)
 
 ```
 One Week After TWD:
