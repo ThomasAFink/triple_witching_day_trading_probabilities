@@ -79,7 +79,10 @@ Nature of TWD: The transactions on TWD might be more of a function of rolling ov
 
 Here's the comparison of percentage price ranges (difference between High and Low prices relative to the Low price) for Triple Witching Days (TWD) versus non-TWDs:
 
+<img width="754" alt="Screenshot 2023-09-20 at 11 18 24" src="https://github.com/ThomasAFink/triple_witching_trading_probabilities/assets/53316058/063d2406-c214-443b-9e6c-e5e687d56c01">
 
+
+![image](https://github.com/ThomasAFink/triple_witching_trading_probabilities/blob/main/output/%5EGSPC_combined_data_since_1990_volume_dist_norm_compare_price.jpg?raw=true)
 
 
 ```
