@@ -103,15 +103,15 @@ Key Observation: The volume on TWDs tends to be higher, with the peak of its dis
 
 
 
-Now, even if there's a spike in volume (many transactions), it doesn't necessarily mean that the price will have a wider range or change. Here's why:
+Now, even if there's a spike in volume, it doesn't necessarily mean that the price will have a wider range or change. Here's why:
 
-Consensus in Direction: If most of the trading volume is biased in one direction (either buying or selling), the price will move primarily in that direction without much volatility. This means high volume but low price range.
+**Consensus in Direction**: If most of the trading volume is biased in one direction (either buying or selling), the price will move primarily in that direction without much volatility. This means high volume but low price range.
 
-Liquidity and Market Depth: In highly liquid markets (like the S&P 500), there's always a counterparty available. If there's an increase in buying volume, there might be enough selling interest to absorb it, preventing prices from skyrocketing. Similarly, increased selling might be matched by buying interest. This balance ensures that prices don't fluctuate wildly, even if volume is high.
+**Liquidity and Market Depth**: In highly liquid markets (like the S&P 500), there's always a counterparty available. If there's an increase in buying volume, there might be enough selling interest to absorb it, preventing prices from skyrocketing. Similarly, increased selling might be matched by buying interest. This balance ensures that prices don't fluctuate or change wildly, even if volume is high.
 
-Nature of TWD: The transactions on TWD might be more of a function of rolling over positions or offsetting positions rather than initiating new speculative trades. Such activities might increase the volume without causing significant price swings.
+**Nature of TWD**: The transactions on TWD might be more of a function of rolling over positions or offsetting positions rather than initiating new speculative trades. Such activities might increase the volume without causing significant price swings.
 
-Here's the comparison of percentage price ranges (difference between High and Low prices relative to the Low price) for Triple Witching Days (TWD) versus non-TWDs:
+Here's the comparison of percentage price ranges and changes (difference between High and Low prices relative to the Low price) for Triple Witching Days (TWD) versus non-TWDs:
 
 <img width="46.5%" alt="Screenshot 2023-09-20 at 11 18 24" src="https://github.com/ThomasAFink/triple_witching_trading_probabilities/assets/53316058/063d2406-c214-443b-9e6c-e5e687d56c01">
 
