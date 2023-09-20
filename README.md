@@ -84,6 +84,9 @@ Here's the comparison of percentage price ranges (difference between High and Lo
 
 ![image](https://github.com/ThomasAFink/triple_witching_trading_probabilities/blob/main/output/%5EGSPC_combined_data_since_1990_volume_dist_norm_compare_price.jpg?raw=true)
 
+Here's the comparison of the percentage price changes (difference between Close and Open prices relative to the Open price) for Triple Witching Days (TWD) versus non-TWDs:
+
+
 
 ```
 Average Volume on TWDs: 3,490,805,746.27 shares

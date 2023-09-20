@@ -100,49 +100,89 @@ plt.grid(True)
 plt.savefig(os.path.join(OS_PATH, f'output/{ticker_symbol}_combined_data_since_1990_volume_dist_norm_compare.jpg'), dpi=300)
 plt.show()
 
-
-# Calculate percentage price ranges for both TWDs and non-TWDs
+# Calculate percentage price ranges for TWDs and non-TWDs (as done previously)
 tw_days['Price Range %'] = ((tw_days['High'] - tw_days['Low']) / tw_days['Low']) * 100
 non_twd_data['Price Range %'] = ((non_twd_data['High'] - non_twd_data['Low']) / non_twd_data['Low']) * 100
 
-# Calculate parameters for TWD price range percentage
+# Parameters for TWD price range percentage
 mean_range_pct_twd = tw_days['Price Range %'].mean()
 std_range_pct_twd = tw_days['Price Range %'].std()
 
-# Calculate parameters for non-TWD price range percentage
+# Parameters for non-TWD price range percentage
 mean_range_pct_non_twd = non_twd_data['Price Range %'].mean()
 std_range_pct_non_twd = non_twd_data['Price Range %'].std()
 
-# Generate a range of price range percentage values for plotting
+# Range of price range percentage values for plotting
 x_range_pct_twd = np.linspace(mean_range_pct_twd - 4*std_range_pct_twd, mean_range_pct_twd + 4*std_range_pct_twd, 1000)
 x_range_pct_non_twd = np.linspace(mean_range_pct_non_twd - 4*std_range_pct_non_twd, mean_range_pct_non_twd + 4*std_range_pct_non_twd, 1000)
 
-# Generate normal distribution curves for both sets of price range percentage values
+# Normal distribution curves for both sets of price range percentage values
 pdf_range_pct_twd = stats.norm.pdf(x_range_pct_twd, mean_range_pct_twd, std_range_pct_twd)
 pdf_range_pct_non_twd = stats.norm.pdf(x_range_pct_non_twd, mean_range_pct_non_twd, std_range_pct_non_twd)
 
-# Plot histograms and normal distribution curves
-plt.figure(figsize=(14, 7))
-plt.hist(tw_days['Price Range %'], bins=30, density=True, color='b', alpha=0.5, 
-         label=f'TWD Price Range % Histogram (Mean: {mean_range_pct_twd:.2f}%)')
-plt.hist(non_twd_data['Price Range %'], bins=30, density=True, color='g', alpha=0.5, 
-         label=f'Non-TWD Price Range % Histogram (Mean: {mean_range_pct_non_twd:.2f}%)')
-plt.plot(x_range_pct_twd, pdf_range_pct_twd, 'b-', 
-         label=f'TWD Normal Distribution (µ: {mean_range_pct_twd:.2f}%, σ: {std_range_pct_twd:.2f}%)')
-plt.plot(x_range_pct_non_twd, pdf_range_pct_non_twd, 'g-', 
-         label=f'Non-TWD Normal Distribution (µ: {mean_range_pct_non_twd:.2f}%, σ: {std_range_pct_non_twd:.2f}%)')
 
-# Add dashed vertical lines for the means
-plt.axvline(mean_range_pct_twd, color='b', linestyle='--', alpha=0.7)
-plt.axvline(mean_range_pct_non_twd, color='g', linestyle='--', alpha=0.7)
+# Calculate percentage price changes for TWDs and non-TWDs
+tw_days['Price Change %'] = ((tw_days['Close'] - tw_days['Open']) / tw_days['Open']) * 100
+non_twd_data['Price Change %'] = ((non_twd_data['Close'] - non_twd_data['Open']) / non_twd_data['Open']) * 100
 
-plt.xlabel('Price Range Percentage (High - Low) / Low')
-plt.ylabel('Density')
-plt.title('Price Range Percentage Distribution for TWD vs. Non-TWD')
-plt.legend()
-plt.grid(True)
+# Calculate parameters for TWD price change percentage (as done previously)
+mean_change_pct_twd = tw_days['Price Change %'].mean()
+std_change_pct_twd = tw_days['Price Change %'].std()
+
+# Calculate parameters for non-TWD price change percentage (as done previously)
+mean_change_pct_non_twd = non_twd_data['Price Change %'].mean()
+std_change_pct_non_twd = non_twd_data['Price Change %'].std()
+
+# Generate a range of price change percentage values for plotting (as done previously)
+x_change_pct_twd = np.linspace(mean_change_pct_twd - 4*std_change_pct_twd, mean_change_pct_twd + 4*std_change_pct_twd, 1000)
+x_change_pct_non_twd = np.linspace(mean_change_pct_non_twd - 4*std_change_pct_non_twd, mean_change_pct_non_twd + 4*std_change_pct_non_twd, 1000)
+
+# Generate normal distribution curves for both sets of price change percentage values (as done previously)
+pdf_change_pct_twd = stats.norm.pdf(x_change_pct_twd, mean_change_pct_twd, std_change_pct_twd)
+pdf_change_pct_non_twd = stats.norm.pdf(x_change_pct_non_twd, mean_change_pct_non_twd, std_change_pct_non_twd)
+
+
+# Create a figure with two subplots side by side
+fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(18, 7))
+
+# Plotting Price Range Percentage
+axes[0].hist(tw_days['Price Range %'], bins=30, density=True, color='b', alpha=0.5, 
+             label=f'TWD Price Range % Histogram (Mean: {mean_range_pct_twd:.2f}%)')
+axes[0].hist(non_twd_data['Price Range %'], bins=30, density=True, color='g', alpha=0.5, 
+             label=f'Non-TWD Price Range % Histogram (Mean: {mean_range_pct_non_twd:.2f}%)')
+axes[0].plot(x_range_pct_twd, pdf_range_pct_twd, 'b-', 
+             label=f'TWD Normal Distribution (µ: {mean_range_pct_twd:.2f}%, σ: {std_range_pct_twd:.2f}%)')
+axes[0].plot(x_range_pct_non_twd, pdf_range_pct_non_twd, 'g-', 
+             label=f'Non-TWD Normal Distribution (µ: {mean_range_pct_non_twd:.2f}%, σ: {std_range_pct_non_twd:.2f}%)')
+axes[0].axvline(mean_range_pct_twd, color='b', linestyle='--', alpha=0.7)
+axes[0].axvline(mean_range_pct_non_twd, color='g', linestyle='--', alpha=0.7)
+axes[0].set_xlabel('Price Range Percentage (High - Low) / Low')
+axes[0].set_ylabel('Density')
+axes[0].set_title('Price Range Percentage Distribution')
+axes[0].legend()
+axes[0].grid(True)
+
+# Plotting Price Change Percentage
+axes[1].hist(tw_days['Price Change %'], bins=30, density=True, color='b', alpha=0.5, 
+             label=f'TWD Price Change % Histogram (Mean: {mean_change_pct_twd:.2f}%)')
+axes[1].hist(non_twd_data['Price Change %'], bins=30, density=True, color='g', alpha=0.5, 
+             label=f'Non-TWD Price Change % Histogram (Mean: {mean_change_pct_non_twd:.2f}%)')
+axes[1].plot(x_change_pct_twd, pdf_change_pct_twd, 'b-', 
+             label=f'TWD Normal Distribution (µ: {mean_change_pct_twd:.2f}%, σ: {std_change_pct_twd:.2f}%)')
+axes[1].plot(x_change_pct_non_twd, pdf_change_pct_non_twd, 'g-', 
+             label=f'Non-TWD Normal Distribution (µ: {mean_change_pct_non_twd:.2f}%, σ: {std_change_pct_non_twd:.2f}%)')
+axes[1].axvline(mean_change_pct_twd, color='b', linestyle='--', alpha=0.7)
+axes[1].axvline(mean_change_pct_non_twd, color='g', linestyle='--', alpha=0.7)
+axes[1].set_xlabel('Price Change Percentage (Close - Open) / Open')
+axes[1].set_ylabel('Density')
+axes[1].set_title('Price Change Percentage Distribution')
+axes[1].legend()
+axes[1].grid(True)
+
+plt.tight_layout()
 plt.savefig(os.path.join(OS_PATH, f'output/{ticker_symbol}_combined_data_since_1990_volume_dist_norm_compare_price.jpg'), dpi=300)
 plt.show()
+
 
 
 print("Summary Volume Statistics for the S&P 500 Index Around Triple Witching Days Since 1990")
