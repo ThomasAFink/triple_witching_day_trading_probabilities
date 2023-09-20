@@ -55,10 +55,6 @@ plt.tight_layout()
 plt.savefig(os.path.join(OS_PATH, f'output/{ticker_symbol}_combined_data_since_1990.jpg'), dpi=300)
 plt.show()
 
-plt.tight_layout()
-plt.savefig(os.path.join(OS_PATH, f'output/{ticker_symbol}_combined_data_since_1990.jpg'), dpi=300)
-plt.show()
-
 print("------------------------------------------------------------------------------------------------------------------------")
 print("Summary Statistics for the S&P 500 Index Following Triple Witching Days Since 1990")
 for i, n in enumerate(weeks_to_examine):

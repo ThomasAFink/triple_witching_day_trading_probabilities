@@ -9,6 +9,8 @@ Triple Witching refers to the quarterly event in financial markets where stock i
 
 ### Results
 
+**main.py**
+
 ![image](https://github.com/ThomasAFink/triple_witching_trading_probabilities/blob/main/output/%5EGSPC_combined_data_since_1990.jpg?raw=true)
 
 One Week After TWD:
@@ -34,6 +36,18 @@ Average Return: −0.5063%
 Standard Deviation of Returns: 5.8430%
 Probability of the Market Ending Positive: 58.33%
 Probability of the Market Ending Negative: 41.67%
+
+**volume.py**
+
+Here's the volume distribution for the Triple Witching Days (TWD) since 1990:
+
+The histogram displays the distribution of volumes on all TWDs, providing a visual representation of the spread and central tendency of the volume on these days. The red dashed line represents the average volume on TWDs.
+
+The extended plot now encapsulates the entire trading week of the Triple Witching Day (TWD) as well as the week after. After the TWD, there's a noticeable drop in trading volume on the first day.
+
+Average Volume on TWDs: 3,490,805,746.27 shares
+Average Volume on Non-TWDs: 2,430,337,434.21 shares
+Difference in Volume: 1,060,468,312.06 shares
 
 ### Observations:
 
