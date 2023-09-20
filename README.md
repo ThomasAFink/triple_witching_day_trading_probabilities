@@ -6,6 +6,9 @@ This Jupyter Notebook code provides a comprehensive analysis of the S&P 500 Inde
 
 Triple Witching refers to the quarterly event in financial markets where stock index futures, stock index options, and stock options all expire on the same day. This event occurs on the third Friday of March, June, September, and December, and is associated with increased trading volume and volatility. The significance of studying the returns after TWD is to understand if any predictable price patterns emerge as a result of this event.
 
+https://www.bloomberg.com/news/articles/2023-09-14/a-4-trillion-triple-witching-event-endangers-stock-market-calm
+https://www.investopedia.com/terms/t/triplewitchinghour.asp
+
 Here's the daily stock chart for the S&P 500 over the last three years. The volume is represented by the gray bars, and the Triple Witching Days (TWDs) are highlighted with yellow shading. This visualization should give you a clear view of the price movement and volume, especially around the TWDs.
 
 ![image](https://github.com/ThomasAFink/triple_witching_trading_probabilities/blob/main/output/%5EGSPC_combined_data_since_1990_stockchart.jpg?raw=true)
