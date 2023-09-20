@@ -1,6 +1,6 @@
 # Triple Witching Day Trading Probabilities
 
-This Jupyter Notebook code provides a comprehensive analysis of the S&P 500 Index returns following the Triple Witching Days (TWD) since 1990.
+This notebook provides a comprehensive analysis of the S&P 500 Index returns following the Triple Witching Days (TWD) since 1990.
 
 ### What is Triple Witching?
 
