@@ -101,6 +101,16 @@ The standard deviation provides a measure of the dispersion of the returns. It's
 Where ![image](https://latex.codecogs.com/gif.latex?%5Cbar%7Br%7D) is the average return.
 
 
+**Probability of the Market Ending Positive:**
+This is the probability that the return on a given day is positive. For a set of observations, it's the fraction of days with positive returns:
+
+![image](https://latex.codecogs.com/gif.latex?P(%5Ctext%7BPositive%20Return%7D)%20=%20%5Cfrac%7B%5Ctext%7BNumber%20of%20days%20with%20%7D%20r_i%20%3E%200%7D%7Bn%7D)
+
+**Probability of the Market Ending Negative:**
+Similarly, this is the probability that the return on a given day is negative. For a set of observations, it's the fraction of days with negative returns:
+
+![image](https://latex.codecogs.com/gif.latex?P(%5Ctext%7BNegative%20Return%7D)%20=%20%5Cfrac%7B%5Ctext%7BNumber%20of%20days%20with%20%7D%20r_i%20%3C%200%7D%7Bn%7D)
+
 **Bernoulli Trial:**
 Consider a single Triple Witching Day. Let's denote the event that the market has a positive return on that day as ![image](https://latex.codecogs.com/gif.latex?X).
 
