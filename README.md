@@ -85,6 +85,28 @@ Probability of the Market Ending Positive: 58.33%
 Probability of the Market Ending Negative: 41.67%
 ```
 
+**Bernoulli Trial:**
+Consider a single Triple Witching Day. Let's denote the event that the market has a positive return on that day as X.
+
+Then, X can be modeled as a Bernoulli random variable:
+
+![image](https://latex.codecogs.com/gif.latex?X%20=%20%5Cbegin%7Bcases%7D%201%20&%20%5Ctext%7Bif%20market%20has%20a%20positive%20return%20(%22success%22)%7D%20%5C%5C%200%20&%20%5Ctext%7Bif%20market%20does%20not%20have%20a%20positive%20return%20(%22failure%22)%7D%20%5Cend%7Bcases%7D)
+
+The probabilities associated with these outcomes are:
+
+![image](https://latex.codecogs.com/gif.latex?P(X=1)%20=%20p)
+![image](https://latex.codecogs.com/gif.latex?P(X=0)%20=%201-p)
+
+**Bernoulli Process:**
+
+![image](https://latex.codecogs.com/gif.latex?X_i%20=%20%5Cbegin%7Bcases%7D%201%20&%20%5Ctext%7Bif%20market%20has%20a%20positive%20return%20on%20the%20%7D%20i%5E%7Bth%7D%20%5Ctext%7B%20day%20(%22success%22)%7D%20%5C%5C%200%20&%20%5Ctext%7Bif%20market%20does%20not%20have%20a%20positive%20return%20on%20the%20%7D%20i%5E%7Bth%7D%20%5Ctext%7B%20day%20(%22failure%22)%7D%20%5Cend%7Bcases%7D)
+
+![image](https://latex.codecogs.com/gif.latex?P(X_i=1)%20=%20p%20%5Cquad%20%5Cforall%20i)
+
+![image](https://latex.codecogs.com/gif.latex?P(X_%7Bi_1%7D%20=%20x_%7Bi_1%7D,%20X_%7Bi_2%7D%20=%20x_%7Bi_2%7D,%20%5Cdots,%20X_%7Bi_k%7D%20=%20x_%7Bi_k%7D)%20=%20%5Cprod_%7Bj=1%7D%5E%7Bk%7D%20P(X_%7Bi_j%7D%20=%20x_%7Bi_j%7D))
+
+![image](https://latex.codecogs.com/gif.latex?S_n%20=%20%5Csum_%7Bi=1%7D%5E%7Bn%7D%20X_i)
+
 **volume.py**
 
 Here's the volume visualization for the Triple Witching Days (TWD) since 1990.
