@@ -85,6 +85,22 @@ Probability of the Market Ending Positive: 58.33%
 Probability of the Market Ending Negative: 41.67%
 ```
 
+**Average Return:**
+
+The average return for a given period (e.g., one week after TWD) is simply the mean of the returns observed during that period. Mathematically, this is given by:
+
+![image](https://latex.codecogs.com/gif.latex?%5Ctext%7BAverage%20Return%7D%20=%20%5Cfrac%7B1%7D%7Bn%7D%20%5Csum_%7Bi=1%7D%5E%7Bn%7D%20r_i)
+
+Where ![image](https://latex.codecogs.com/gif.latex?r_i) represents the return on the ![image](https://latex.codecogs.com/gif.latex?i%5E%7Bth%7D) day, and ![image](https://latex.codecogs.com/gif.latex?n) is the number of days.
+
+**Standard Deviation of Returns:**
+The standard deviation provides a measure of the dispersion of the returns. It's given by:
+
+![image](https://latex.codecogs.com/gif.latex?%5Ctext%7BStandard%20Deviation%7D%20=%20%5Csqrt%7B%5Cfrac%7B1%7D%7Bn-1%7D%20%5Csum_%7Bi=1%7D%5E%7Bn%7D%20(r_i%20-%20%5Cbar%7Br%7D)%5E2%7D)
+
+Where ![image](https://latex.codecogs.com/gif.latex?%5Cbar%7Br%7D) is the average return.
+
+
 **Bernoulli Trial:**
 Consider a single Triple Witching Day. Let's denote the event that the market has a positive return on that day as ![image](https://latex.codecogs.com/gif.latex?X).
 
@@ -110,6 +126,8 @@ The probabilities remain consistent across the trials:
 
 ![image](https://latex.codecogs.com/gif.latex?P(X_i=1)%20=%20p%20%5Cquad%20%5Cforall%20i)
 
+![image](https://latex.codecogs.com/gif.latex?P(X_i=0)%20=%201-p%20%5Cquad%20%5Cforall%20i)
+
 Furthermore, the trials are independent, so for any subset of days ![image](https://latex.codecogs.com/gif.latex?i_1), ![image](https://latex.codecogs.com/gif.latex?i_2), ![image](https://latex.codecogs.com/gif.latex?i_3), ..., ![image](https://latex.codecogs.com/gif.latex?i_k), the joint probability is the product of their individual probabilities:
 
 ![image](https://latex.codecogs.com/gif.latex?P(X_%7Bi_1%7D%20=%20x_%7Bi_1%7D,%20X_%7Bi_2%7D%20=%20x_%7Bi_2%7D,%20%5Cdots,%20X_%7Bi_k%7D%20=%20x_%7Bi_k%7D)%20=%20%5Cprod_%7Bj=1%7D%5E%7Bk%7D%20P(X_%7Bi_j%7D%20=%20x_%7Bi_j%7D))
@@ -119,6 +137,12 @@ In this Bernoulli process, the total number of "successes" (positive returns) in
 ![image](https://latex.codecogs.com/gif.latex?S_n%20=%20%5Csum_%7Bi=1%7D%5E%7Bn%7D%20X_i)
 
 This ![image](https://latex.codecogs.com/gif.latex?S_n) follows a binomial distribution with parameters ![image](https://latex.codecogs.com/gif.latex?n) (number of trials) and ![image](https://latex.codecogs.com/gif.latex?p) (probability of success in each trial).
+
+
+
+
+
+
 
 **volume.py**
 
