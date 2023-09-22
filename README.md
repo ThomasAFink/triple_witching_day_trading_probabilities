@@ -86,26 +86,39 @@ Probability of the Market Ending Negative: 41.67%
 ```
 
 **Bernoulli Trial:**
-Consider a single Triple Witching Day. Let's denote the event that the market has a positive return on that day as X.
+Consider a single Triple Witching Day. Let's denote the event that the market has a positive return on that day as ![image](https://latex.codecogs.com/gif.latex?X).
 
-Then, X can be modeled as a Bernoulli random variable:
+Then, ![image](https://latex.codecogs.com/gif.latex?X) can be modeled as a Bernoulli random variable:
 
 ![image](https://latex.codecogs.com/gif.latex?X%20=%20%5Cbegin%7Bcases%7D%201%20&%20%5Ctext%7Bif%20market%20has%20a%20positive%20return%20(%22success%22)%7D%20%5C%5C%200%20&%20%5Ctext%7Bif%20market%20does%20not%20have%20a%20positive%20return%20(%22failure%22)%7D%20%5Cend%7Bcases%7D)
 
 The probabilities associated with these outcomes are:
 
 ![image](https://latex.codecogs.com/gif.latex?P(X=1)%20=%20p)
+
 ![image](https://latex.codecogs.com/gif.latex?P(X=0)%20=%201-p)
 
 **Bernoulli Process:**
 
+Now, let's consider observing the market returns on ![image](https://latex.codecogs.com/gif.latex?n) different Triple Witching Days. Each day is an independent Bernoulli trial. Let's denote the outcome of the market return on the ![image](https://latex.codecogs.com/gif.latex?i%5E%7Bth%7D) day as ![image](https://latex.codecogs.com/gif.latex?X_i).
+
+The sequence (![image](https://latex.codecogs.com/gif.latex?X_1). ![image](https://latex.codecogs.com/gif.latex?X_2),![image](https://latex.codecogs.com/gif.latex?X_3), ... ![image](https://latex.codecogs.com/gif.latex?X_n)) forms a Bernoulli process. Each ![image](https://latex.codecogs.com/gif.latex?X_i) is a Bernoulli random variable:
+
 ![image](https://latex.codecogs.com/gif.latex?X_i%20=%20%5Cbegin%7Bcases%7D%201%20&%20%5Ctext%7Bif%20market%20has%20a%20positive%20return%20on%20the%20%7D%20i%5E%7Bth%7D%20%5Ctext%7B%20day%20(%22success%22)%7D%20%5C%5C%200%20&%20%5Ctext%7Bif%20market%20does%20not%20have%20a%20positive%20return%20on%20the%20%7D%20i%5E%7Bth%7D%20%5Ctext%7B%20day%20(%22failure%22)%7D%20%5Cend%7Bcases%7D)
+
+The probabilities remain consistent across the trials:
 
 ![image](https://latex.codecogs.com/gif.latex?P(X_i=1)%20=%20p%20%5Cquad%20%5Cforall%20i)
 
+Furthermore, the trials are independent, so for any subset of days ![image](https://latex.codecogs.com/gif.latex?i_1), ![image](https://latex.codecogs.com/gif.latex?i_2), ![image](https://latex.codecogs.com/gif.latex?i_3), ..., ![image](https://latex.codecogs.com/gif.latex?i_k), the joint probability is the product of their individual probabilities:
+
 ![image](https://latex.codecogs.com/gif.latex?P(X_%7Bi_1%7D%20=%20x_%7Bi_1%7D,%20X_%7Bi_2%7D%20=%20x_%7Bi_2%7D,%20%5Cdots,%20X_%7Bi_k%7D%20=%20x_%7Bi_k%7D)%20=%20%5Cprod_%7Bj=1%7D%5E%7Bk%7D%20P(X_%7Bi_j%7D%20=%20x_%7Bi_j%7D))
 
+In this Bernoulli process, the total number of "successes" (positive returns) in the ![image](https://latex.codecogs.com/gif.latex?n) trials can be represented as:
+
 ![image](https://latex.codecogs.com/gif.latex?S_n%20=%20%5Csum_%7Bi=1%7D%5E%7Bn%7D%20X_i)
+
+This ![image](https://latex.codecogs.com/gif.latex?S_n) follows a binomial distribution with parameters ![image](https://latex.codecogs.com/gif.latex?n) (number of trials) and ![image](https://latex.codecogs.com/gif.latex?p) (probability of success in each trial).
 
 **volume.py**
 
